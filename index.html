@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Обчислення суми чисел</title>
+    <meta charset="UTF-8" />
+    <title>Відправити email</title>
 </head>
 <body>
-<form>
-    <label for="number1">Перше число:</label>
-    <input type="number" id="number1" required>
+<form method="post" action="mailto:example@example.com">
+    <label for="email">Адреса e-mail:</label>
+    <input type="email" id="email" name="email" required />
 
-    <label for="number2">Друге число:</label>
-    <input type="number" id="number2" required>
-<br>
-    <button type="submit">Обчислити суму</button>
-<br>
-    <label for="result">Результат:</label>
-    <input type="text" id="result" readonly>
+    <label for="subject">Тема повідомлення:</label>
+    <input type="text" id="subject" name="subject" />
+
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Надіслати</button>
 </form>
-<script src="6_5.js"></script>
 </body>
 </html>
